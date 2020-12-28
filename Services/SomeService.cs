@@ -21,12 +21,13 @@ namespace BaseBot.Services
                 _ = Task.Run(() => Example());
                 await Task.CompletedTask;
             };
+            await Task.CompletedTask;
         }
 
         private async Task Example()
         {
             Console.WriteLine("MessageCreated");
-
+            await Task.CompletedTask;
         }
     }
 }
