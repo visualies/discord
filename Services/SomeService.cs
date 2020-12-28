@@ -16,6 +16,7 @@ namespace BaseBot.Services
 
         public async Task InitializeAsync()
         {
+            //example event handler
             Bot.MessageCreated += async (client, args) =>
             {
                 _ = Task.Run(() => Example());
